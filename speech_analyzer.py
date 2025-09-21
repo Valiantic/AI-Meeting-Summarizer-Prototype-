@@ -10,10 +10,10 @@ summarizer = pipeline(
     "summarization",
     model="t5-small",
     tokenizer="t5-small",
-    device=0 if torch.cuda.is_available() else -1  # Use GPU if available, else CPU
+    device=0 if torch.cuda.is_available() else -1 
 )
 
-# Alternative smaller models you can try:
+# Alternative smaller models to try later: 
 # model="t5-small" - Very small and fast
 # model="sshleifer/distilbart-cnn-12-6" - Smaller version of BART
 # model="google/flan-t5-small" - Instruction-tuned T5
